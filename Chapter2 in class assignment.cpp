@@ -8,8 +8,8 @@
 
 #include <iostream>
 using namespace std;
-const double stateTax = .04;
-const double countyTax = .02;
+//const double stateTax = .04;
+//const double countyTax = .02;
 
 int main()
 {
@@ -24,7 +24,7 @@ int main()
 	cout << "\n What is the cost of the item you are purchasing? ";
 	cin >> itemCost;
 
-	double itemCost = 95.00;
+    //double itemCost = 0.0; // Removed to avoid redefinition error
 	double totaltax = itemCost * stateTax + itemCost * countyTax;
 	double totalCost = itemCost + totaltax;
 
