@@ -13,6 +13,17 @@ const double countyTax = .02;
 
 int main()
 {
+	double stateTax;
+	double countyTax;
+	double itemCost;
+
+	cout << "Please enter the state tax (as a decimal point): ";
+	cin >> stateTax;
+	cout << endl << "Please enter the county tax (as a decimal point): ";
+	cin >> countyTax;
+	cout << "\n What is the cost of the item you are purchasing? ";
+	cin >> itemCost;
+
 	double itemCost = 95.00;
 	double totaltax = itemCost * stateTax + itemCost * countyTax;
 	double totalCost = itemCost + totaltax;
